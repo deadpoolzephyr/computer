@@ -19,7 +19,7 @@ class ComputerSearch extends Computer
     {
         return [
             [['id'], 'integer'],
-            [['type', 'brand', 'model', 'cpu', 'gpu', 'ram', 'created_at', 'updated_at'], 'safe'],
+            [['type', 'brand', 'model', 'cpu', 'gpu', 'ram', 'storage_type', 'connection', 'created_at', 'updated_at'], 'safe'],
         ];
     }
 
@@ -69,7 +69,9 @@ class ComputerSearch extends Computer
             ->andFilterWhere(['like', 'model', $this->model])
             ->andFilterWhere(['like', 'cpu', $this->cpu])
             ->andFilterWhere(['like', 'gpu', $this->gpu])
-            ->andFilterWhere(['like', 'ram', $this->ram]);
+            ->andFilterWhere(['like', 'ram', $this->ram])
+            ->andFilterWhere(['like', 'storage_type', $this->storage_type])
+            ->andFilterWhere(['like', 'connection', $this->connection]);
 
         return $dataProvider;
     }

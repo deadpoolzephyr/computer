@@ -15,6 +15,8 @@ use Yii;
  * @property string|null $cpu
  * @property string|null $gpu
  * @property string|null $ram
+ * @property string|null $storage_type
+ * @property string|null $connection
  * @property string|null $created_at
  * @property string|null $updated_at
  */
@@ -34,8 +36,10 @@ class Computer extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['type','brand','model'],'required'],
             [['created_at', 'updated_at'], 'safe'],
-            [['type', 'brand', 'model', 'cpu', 'gpu', 'ram'], 'string', 'max' => 255],
+            [['type', 'brand', 'model', 'cpu', 'gpu', 'ram', 'storage_type', 'connection'], 'string', 'max' => 255],
+            [['model'],'unique'],
         ];
     }
 
@@ -52,6 +56,8 @@ class Computer extends \yii\db\ActiveRecord
             'cpu' => 'Cpu',
             'gpu' => 'Gpu',
             'ram' => 'Ram',
+            'storage_type' => 'Storage_Type',
+            'connection' => 'Connection',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
         ];

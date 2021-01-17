@@ -25,6 +25,14 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'cpu') ?>
 
+    <?= $form->field($model, 'gpu') ?>
+
+    <?= $form->field($model, 'ram') ?>
+
+    <?= $form->field($model, 'storage_type') ?>
+
+    <?= $form->field($model, 'connection') ?>
+
     <?php // echo $form->field($model, 'gpu') ?>
 
     <?php // echo $form->field($model, 'ram') ?>

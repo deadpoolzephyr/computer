@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\modules\computer\models\Computer */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Computers', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Computers & Computer Components', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
@@ -36,6 +36,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'cpu',
             'gpu',
             'ram',
+            'storage_type',
+            'connection',
             'created_at',
             'updated_at',
         ],
