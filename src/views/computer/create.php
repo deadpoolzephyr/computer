@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model app\modules\computerstore\models\Computer */
+/* @var $model app\modules\computer\models\Computer */
 
 $this->title = 'Create Computer';
 $this->params['breadcrumbs'][] = ['label' => 'Computers', 'url' => ['index']];
