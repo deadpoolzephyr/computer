@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model app\modules\computer\models\Computer */
 
 $this->title = 'Create Computer';
-$this->params['breadcrumbs'][] = ['label' => 'Computers', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Computers & Computer Components', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="computer-create">
