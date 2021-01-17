@@ -24,10 +24,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'ram')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'storage_type')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'connection')->textInput(['maxlength' => true]) ?>
-
     <?= $form->field($model, 'created_at')->textInput() ?>
 
     <?= $form->field($model, 'updated_at')->textInput() ?>

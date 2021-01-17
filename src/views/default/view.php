@@ -36,8 +36,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'cpu',
             'gpu',
             'ram',
-            'storage_type',
-            'connection',
             'created_at',
             'updated_at',
         ],
