@@ -60,18 +60,26 @@ class ComputerSearch extends Computer
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'type' => $this->type,
+            'brand' => $this->brand,
+            'model' => $this->model,
+            'cpu' => $this->cpu,
+            'gpu' => $this->gpu,
+            'ram' => $this->ram,
+            'storage_type' => $this->storage_type,
+            'connection' => $this->connection,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
 
-        $query->andFilterWhere(['like', 'type', $this->type])
-            ->andFilterWhere(['like', 'brand', $this->brand])
-            ->andFilterWhere(['like', 'model', $this->model])
-            ->andFilterWhere(['like', 'cpu', $this->cpu])
-            ->andFilterWhere(['like', 'gpu', $this->gpu])
-            ->andFilterWhere(['like', 'ram', $this->ram])
-            ->andFilterWhere(['like', 'storage_type', $this->storage_type])
-            ->andFilterWhere(['like', 'connection', $this->connection]);
+        //$query->andFilterWhere(['like', 'type', $this->type])
+        //    ->andFilterWhere(['like', 'brand', $this->brand])
+        //    ->andFilterWhere(['like', 'model', $this->model])
+        //    ->andFilterWhere(['like', 'cpu', $this->cpu])
+        //    ->andFilterWhere(['like', 'gpu', $this->gpu])
+        //    ->andFilterWhere(['like', 'ram', $this->ram])
+        //    ->andFilterWhere(['like', 'storage_type', $this->storage_type])
+        //    ->andFilterWhere(['like', 'connection', $this->connection]);
 
         return $dataProvider;
     }
