@@ -3,8 +3,8 @@
 namespace deadpoolzephyr\computer\controllers;
 
 use Yii;
-use app\modules\computer\models\Computer;
-use app\modules\computer\models\ComputerSearch;
+use deadpoolzephyr\computer\models\Computer;
+use deadpoolzephyr\computer\models\ComputerSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
