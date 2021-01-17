@@ -34,10 +34,8 @@ class Computer extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['type','brand','model'],'required'],
             [['created_at', 'updated_at'], 'safe'],
             [['type', 'brand', 'model', 'cpu', 'gpu', 'ram'], 'string', 'max' => 255],
-            [['model'],'unique'],
         ];
     }
 

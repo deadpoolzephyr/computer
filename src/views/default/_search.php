@@ -29,10 +29,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'ram') ?>
 
-    <?php // echo $form->field($model, 'gpu') ?>
-
-    <?php // echo $form->field($model, 'ram') ?>
-
     <?php // echo $form->field($model, 'created_at') ?>
 
     <?php // echo $form->field($model, 'updated_at') ?>
