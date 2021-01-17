@@ -19,12 +19,12 @@
   },
   "autoload": {
     "psr-4": {
-      "deadpoolzephyr\\content\\": "src"
+      "deadpoolzephyr\\computer\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "deadpoolzephyr\\content\\tests\\": "tests"
+      "deadpoolzephyr\\computer\\tests\\": "tests"
     }
   },
   "repositories": [
