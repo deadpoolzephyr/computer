@@ -9,7 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
-class DefaultController extends \yii\web\Controller
+class DefaultController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -18,7 +18,7 @@ class DefaultController extends \yii\web\Controller
     {
         return [
             'verbs' => [
-                'class' => yii\filters\VerbFilter::className(),
+                'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
                 ],
@@ -119,6 +119,6 @@ class DefaultController extends \yii\web\Controller
             return $model;
         }
 
-        throw new \yii\web\NotFoundHttpException('The requested page does not exist.');
+        throw new NotFoundHttpException('The requested page does not exist.');
     }
 }
