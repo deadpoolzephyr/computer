@@ -9,6 +9,7 @@ Aşağıdaki linki takip ederek otomatik kurulum yapabilirsiniz.
 https://gist.github.com/ahmetbaranyilmaz/1797dd519fc6442e51665589cabf9631
 
 Sanal Makine (Vagrant) Kurulumu:
+
 Sırasıyla aşağıdaki yazılımlar kurulmalı ve github token üretilmelidir.
 
 VirtualBox
