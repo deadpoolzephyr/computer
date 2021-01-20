@@ -64,10 +64,7 @@ php yii migrate/up --migrationPath=@vendor/deadpoolzephyr/computer/migrations
 composer require deadpoolzephyr/computer
 
 
-yazılır.
-
-
-Modüle
+yazılır. Modüle
 
 
 http://advanced/backend/web/index.php?r=computer/default/index
