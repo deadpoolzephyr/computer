@@ -3,7 +3,7 @@ Computer Module
 
 Bu modül store modülü ile birlikte kullanılmalıdır. Tek başına kullanılmasında sorun olmayacaktır ancak birlikte mantıklı bir program ortaya çıkaracaktır.
 
-Kurulum
+Kurulum:
 Ubuntu Kullanıcıları için
 Aşağıdaki linki takip ederek otomatik kurulum yapabilirsiniz. 
 
