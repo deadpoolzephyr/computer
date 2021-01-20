@@ -1,8 +1,12 @@
 # computer
 Computer Module
 
-Bu modül #store modülü ile birlikte kullanılmalıdır. Tek başına kullanılmasında sorun olmayacaktır ancak birlikte mantıklı bir program ortaya çıkaracaktır.
+Bu modül store modülü ile birlikte kullanılmalıdır. Tek başına kullanılmasında sorun olmayacaktır ancak birlikte mantıklı bir program ortaya çıkaracaktır.
 
+Kurulum
+Ubuntu Kullanıcıları için
+Aşağıdaki linki takip ederek otomatik kurulum yapabilirsiniz. 
+https://gist.github.com/ahmetbaranyilmaz/1797dd519fc6442e51665589cabf9631
 
 Sanal Makine (Vagrant) Kurulumu:
 Sırasıyla aşağıdaki yazılımlar kurulmalı ve github token üretilmelidir.
